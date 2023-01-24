@@ -9,13 +9,13 @@ import gym
 from collections import deque
 
 # CONSTANTS
-GAMMA=0.99 		        # discount rate for computing the TD target
-BATCH_SIZE=32 		    # how many transitions we will sample
-BUFFER_SIZE=50000 	    # max number of transitions to store before overwriting
-MIN_REPLAY_SIZE=1000 	# how many transitions in the replay buffer before doing gradients
-EPSILON_START=1.0 	    # starting value of epsilon
-EPSILON_END=0.82 	    # ending value of epsilon
-EPSILON_DECAY=10000 	# number of steps to decrease epsilon to final value
+GAMMA=0.99              # discount rate for computing the TD target
+BATCH_SIZE=32           # how many transitions we will sample
+BUFFER_SIZE=50000       # max number of transitions to store before overwriting
+MIN_REPLAY_SIZE=1000.   # how many transitions in the replay buffer before doing gradients
+EPSILON_START=1.0       # starting value of epsilon
+EPSILON_END=0.82        # ending value of epsilon
+EPSILON_DECAY=10000     # number of steps to decrease epsilon to final value
 TARGET_UPDATE_FREQ=1000 # freqeuncy of setting the target parameters to the online parameters
 LEARNING_RATE=5e-4      # learning rate
 REWARD_THRESHOLD=20     # after mean reward reaches this threshold, we stop training and let the computer play
