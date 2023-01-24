@@ -1,4 +1,4 @@
-# Implementation of Deep Q-learning using OpenAI gym, relying on the tutorial https://www.youtube.com/watch?v=NP8pXZdU-5U
+# Implementation of Deep Q-learning using OpenAI gym, see https://www.youtube.com/watch?v=NP8pXZdU-5U
 
 import numpy as np
 import random
